@@ -1,0 +1,44 @@
+# Adi Midla
+
+Adi Midla is a third-year B.Tech Computer Science and Engineering (Gaming Technology) student at VIT Bhopal University, India. He is a learner and builder exploring software, gaming technology, and interactive digital experiences.
+
+## Interests
+
+C++, Python, Java, data structures and algorithms, software engineering, web development, Unity, game development, extended reality, virtual reality, artificial intelligence, and emerging technologies. These are interests and learning areas; proficiency percentages are not claimed.
+
+## Selected work
+
+- **ExamScannerAI** — backend prototype using Python, FastAPI, OpenCV, and Tesseract OCR. The repository describes image preprocessing, text extraction and cleanup, question detection, and structured JSON responses. Its README marks the frontend as planned. https://github.com/adimidla20/ExamScannerAI
+- **Open Source Audit** — coursework on Git and open-source software with five Bash utilities for Linux. https://github.com/adimidla20/oss-audit-24BCG10117
+- **Game Physics Experiments** — C# experiments exploring motion, vectors, collisions, and particles. https://github.com/adimidla20/Gamephysics_projects
+- **VR Parkour Game** — a learning prototype exploring Unity, the XR Interaction Toolkit, movement, and VR interaction. No public demo link was supplied.
+- **Escape the Quiet Room** — VR escape-room concept / learning exercise.
+- **Float Quest: The Lost Inventor** — educational game concept inspired by buoyancy.
+
+## Recognition and participation
+
+- Completed the Google Cloud Arcade programme.
+- Participated in the Digital India Awareness Workshop “Ignites Innovation” at IIT (BHU), Varanasi, on 31 January 2026.
+- IN-NEC Top 30 — team recognition for the E-Cell VIT Bhopal team.
+
+## Education and student involvement
+
+- Third-year B.Tech Computer Science and Engineering (Gaming Technology), VIT Bhopal University.
+- Finance Team member, E-Cell, VIT Bhopal University.
+
+## Portfolio sections
+
+- `/` — introduction, story, toolkit, selected work, interactive physics study, recognition, interests, and contact.
+- `/#story` — personal introduction and education.
+- `/#toolkit` — technical interests and learning areas.
+- `/#work` — project descriptions and links.
+- `/#physics-lab` — interactive projectile-motion study.
+- `/#proof` — programme completion, workshop participation, and team recognition.
+- `/#beyond` — interests outside technology.
+- `/#contact` — public contact and profile links.
+
+## Contact
+
+Email: adimidlaofficial@gmail.com  
+GitHub: https://github.com/adimidla20  
+LinkedIn: https://www.linkedin.com/in/adi-midla

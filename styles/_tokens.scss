@@ -1,0 +1,32 @@
+$ink: #090a0c;
+$graphite: #17191d;
+$surface: #202226;
+$bone: #e8e4dc;
+$mist: #a7a9ac;
+$muted: #73767a;
+$red: #d93636;
+$amber: #f2a65a;
+$line: rgba(232, 228, 220, 0.15);
+$mono: var(--font-ibm-plex-mono), "SFMono-Regular", Consolas, monospace;
+$display: var(--font-space-grotesk), var(--font-manrope), sans-serif;
+$body: var(--font-manrope), Arial, sans-serif;
+$serif: var(--font-instrument-serif), Georgia, serif;
+
+@mixin eyebrow {
+  font-family: $mono;
+  font-size: 0.62rem;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+@mixin section-pad {
+  padding: clamp(3.5rem, 5vw, 4.5rem) 0;
+}
+
+@mixin container {
+  width: min(100% - clamp(2rem, 8vw, 8rem), 1600px);
+  margin-inline: auto;
+}
+
