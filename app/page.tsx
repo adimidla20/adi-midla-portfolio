@@ -1,4 +1,4 @@
-import { LightboxImage } from "@/components/image-lightbox";
+import { LightboxImage, PdfPreviewButton, ResumePreview } from "@/components/image-lightbox";
 import { Experience } from "@/components/experience";
 import { DeferredPhysicsLab } from "@/components/deferred-physics-lab";
 import Image from "next/image";
@@ -126,7 +126,16 @@ export default function Home() {
               {projects.map((project) => (
                 <article className={`project-card project-card--${project.tone}`} key={project.number} data-project-kind={project.filter} data-reveal>
                   <div className="project-card__head"><span>{project.number} / PROJECT</span><span className="project-status"><i />{project.status}</span></div>
-                  {project.image ? (
+                  {"gallery" in project && project.gallery ? (
+                    <figure className="project-art project-art--gallery" aria-label="VR Parkour Game project gallery">
+                      {project.gallery.map((image) => (
+                        <div className="project-gallery__cell" key={image.src}>
+                          <LightboxImage src={image.src} alt={image.alt} sizes="(max-width: 620px) 32vw, (max-width: 1000px) 25vw, 13vw" />
+                          <span className="project-gallery__label">{image.label}</span>
+                        </div>
+                      ))}
+                    </figure>
+                  ) : project.image ? (
                     <figure className="project-art project-art--image">
                       <LightboxImage src={project.image} alt={project.imageAlt} sizes="(max-width: 620px) 100vw, (max-width: 1000px) 90vw, 38vw" />
                     </figure>
@@ -172,7 +181,17 @@ export default function Home() {
               {achievements.map((item) => (
                 <article className={`proof-card${item.image ? "" : " proof-card--plain"}`} key={item.number} data-reveal>
                   {item.image ? <figure className="proof-card__image"><LightboxImage src={item.image} alt={item.alt} sizes="(max-width: 760px) 100vw, 32vw" /></figure> : <div className="proof-card__seal" aria-hidden="true"><span>TOP</span><strong>30</strong><small>IN-NEC</small></div>}
-                  <div className="proof-card__copy"><span className="proof-card__number">{item.number} / RECORD</span><p>{item.label}</p><h3>{item.title}</h3><span className="proof-card__detail">{item.detail}</span></div>
+                  <div className="proof-card__copy">
+                    <span className="proof-card__number">{item.number} / RECORD</span>
+                    <p>{item.label}</p>
+                    <h3>{item.title}</h3>
+                    <span className="proof-card__detail">{item.detail}</span>
+                    {item.pdf && (
+                      <PdfPreviewButton src={item.pdf.src} title={item.pdf.title} className="proof-card__pdf">
+                        {item.pdf.label} <span aria-hidden="true">↗</span>
+                      </PdfPreviewButton>
+                    )}
+                  </div>
                 </article>
               ))}
             </div>
@@ -210,7 +229,7 @@ export default function Home() {
                 <a href={`mailto:${profile.email}`}><span>EMAIL</span><strong>{profile.email}</strong><Arrow diagonal /></a>
                 <a href={profile.github} target="_blank" rel="noreferrer"><span>GITHUB</span><strong>github.com/adimidla20</strong><Arrow diagonal /></a>
                 <a href={profile.linkedin} target="_blank" rel="noreferrer"><span>LINKEDIN</span><strong>linkedin.com/in/adi-midla</strong><Arrow diagonal /></a>
-                <p className="resume-note"><i /> Résumé available on request</p>
+                <ResumePreview />
               </div>
             </div>
             <footer className="site-footer"><span>ADI MIDLA / PERSONAL ARCHIVE</span><span>FROM CURIOSITY TO CODE. FROM IDEAS TO EXPERIENCES.</span><a href="#top">BACK TO TOP ↑</a><small>© {new Date().getFullYear()} ADI MIDLA</small></footer>

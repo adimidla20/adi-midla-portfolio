@@ -95,10 +95,16 @@ export const projects = [
     summary:
       "An exploration of how movement, physical interactions, and guidance can shape a VR parkour experience.",
     details:
-      "The project brief describes work around Unity and the XR Interaction Toolkit, including climbing and grabbing, physics-led movement, A* pathfinding, and ghost-trail guidance. No public demo link was supplied.",
+      "The gallery shows the castle approach, elevated obstacle route, medieval village level, and a headset session. This Unity XR learning prototype explores movement and environment design with the XR Interaction Toolkit. No public demo link was supplied.",
     stack: ["Unity", "XR Interaction Toolkit", "VR"],
-    image: "/images/vr-parkour-game.webp",
-    imageAlt: "First-person VR parkour game screenshot showing an orange navigation marker between rooftops.",
+    image: null,
+    imageAlt: null,
+    gallery: [
+      { src: "/images/vr-parkour-castle.jpg", alt: "Castle entrance and stone steps in the VR parkour game.", label: "CASTLE" },
+      { src: "/images/vr-parkour-obstacles.jpg", alt: "Elevated wooden parkour obstacles across a village course.", label: "OBSTACLES" },
+      { src: "/images/vr-parkour-village.jpg", alt: "A medieval village level viewed from above in the VR game.", label: "VILLAGE" },
+      { src: "/images/adi-vr-playtest.png", alt: "Adi wearing a VR headset and holding the motion controllers.", label: "VR SESSION" },
+    ],
   },
   {
     number: "05",
@@ -109,10 +115,10 @@ export const projects = [
     tone: "teal",
     repo: null,
     summary:
-      "An early project focused on making hostel meal schedules easier to browse and plan around.",
+      "A planned student-facing app for checking hostel meals by day, meal, and dietary label.",
     details:
-      "The concept is in progress. Feature and implementation details can be added as the project develops.",
-    stack: ["Menu planning", "Student experience"],
+      "Planned flow: browse the weekly menu by day and meal, with clear dietary labels. Proposed architecture: React for the interface and Firebase Firestore to store menu items and publish updates. The concept is still in progress, so these features and technologies are planned rather than implemented.",
+    stack: ["React (planned)", "Firebase Firestore (planned)", "Weekly menu UX"],
     image: null,
     imageAlt: null,
   },
@@ -139,6 +145,7 @@ export const achievements = [
     detail: "Completed the Google Cloud Arcade programme.",
     image: "/images/google-cloud-arcade.jpg",
     alt: "Google Cloud Arcade backpack, shirt, and programme items",
+    pdf: null,
   },
   {
     number: "02",
@@ -148,6 +155,7 @@ export const achievements = [
       "Participated in the NeGD workshop “Ignites Innovation,” focused on Digital India pillars, e-Governance, and cybersecurity.",
     image: "/images/iit-bhu-workshop.jpg",
     alt: "Students at the Digital India Awareness Workshop at IIT (BHU)",
+    pdf: { src: "/documents/digital-india-awareness-workshop.pdf", title: "Digital India Awareness Workshop", label: "Open workshop PDF" },
   },
   {
     number: "03",
@@ -157,6 +165,7 @@ export const achievements = [
       "The E-Cell VIT Bhopal team reached the National Entrepreneurship Challenge Top 30.",
     image: "/images/nec-team.webp",
     alt: "Students gathered beneath the Illuminate changemakers display at an event.",
+    pdf: null,
   },
 ];
 
