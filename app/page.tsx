@@ -137,7 +137,7 @@ export default function Home() {
                     </figure>
                   ) : project.image ? (
                     <figure className="project-art project-art--image">
-                      <LightboxImage src={project.image} alt={project.imageAlt} sizes="(max-width: 620px) 100vw, (max-width: 1000px) 90vw, 38vw" />
+                      <LightboxImage src={project.image} alt={project.imageAlt ?? project.title} sizes="(max-width: 620px) 100vw, (max-width: 1000px) 90vw, 38vw" />
                     </figure>
                   ) : <ProjectArtwork tone={project.tone} />}
                   <div className="project-card__content">
