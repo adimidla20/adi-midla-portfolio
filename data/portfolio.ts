@@ -45,9 +45,9 @@ export const projects = [
     tone: "red",
     repo: "https://github.com/adimidla20/ExamScannerAI",
     summary:
-      "A document-processing backend that turns exam-paper images into structured question data.",
+      "A document processing backend that turns exam paper images into structured question data.",
     details:
-      "The current repository describes an image-upload flow, OpenCV preprocessing, Tesseract OCR, text cleanup, question detection, and JSON responses through FastAPI. The README marks the frontend as planned, so this is presented as a backend prototype.",
+      "The current repository describes an image upload flow, OpenCV preprocessing, Tesseract OCR, text cleanup, question detection, and JSON responses through FastAPI. The README marks the frontend as planned, so this is presented as a backend prototype.",
     stack: ["Python", "FastAPI", "OpenCV", "Tesseract OCR"],
     image: null,
     imageAlt: null,
@@ -79,7 +79,7 @@ export const projects = [
     summary:
       "Small explorations of motion, vectors, collisions, and particle effects.",
     details:
-      "A collection of experiments that makes game-physics ideas visible through code. The repository is a learning archive, rather than a single released game.",
+      "A collection of experiments that makes game physics ideas visible through code. The repository is a learning archive, rather than a single released game.",
     stack: ["C#", "Vectors", "Collisions", "Particles"],
     image: null,
     imageAlt: null,
@@ -128,12 +128,12 @@ export const concepts = [
   {
     title: "Escape the Quiet Room",
     kind: "VR concept / learning exercise",
-    text: "A single-player escape-room idea built around environmental puzzles, teleportation, and comfortable VR movement.",
+    text: "A single player escape room idea built around environmental puzzles, teleportation, and comfortable VR movement.",
   },
   {
     title: "Float Quest: The Lost Inventor",
     kind: "Educational game concept",
-    text: "An exploration of floating and sinking inspired by Archimedes’ principle, with raft-building as a possible learning mechanic.",
+    text: "An exploration of floating and sinking inspired by Archimedes’ principle, with raft building as a possible learning mechanic.",
   },
 ];
 
